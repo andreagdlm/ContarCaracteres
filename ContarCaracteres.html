@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTAR CARACTERES</title>
+</head>
+<body>
+    <h1>CONTAR CARACTERES</h1>
+    <input type="text" id="cadena" placeholder="Escribe">
+    <button onclick="contarCaracteres()">CONTAR CARACTERES</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contarCaracteres() {
+            const cadena = document.getElementById('cadena').value;
+            const numCaracteres = cadena.length;
+            document.getElementById('resultado').textContent = `Cantidad de caracteres: ${numCaracteres}`;
+        }
+    </script>
+</body>
+</html>
