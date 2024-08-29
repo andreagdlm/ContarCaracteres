@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADENA EN REVERSA</title>
+</head>
+<body>
+    <h1>REVERTIR PALABRAS</h1>
+    <input type="text" id="frase" placeholder="Escribe una frase">
+    <button onclick="revertirFrase()">REVERTIR</button>
+    <p id="resultado"></p>
+
+    <script>
+        function revertirFrase() {
+            const frase = document.getElementById('frase').value;
+            const palabrasInvertidas = frase.split(' ').reverse().join(' ');
+            document.getElementById('resultado').textContent = `Frase invertida: ${palabrasInvertidas}`;
+        }
+    </script>
+</body>
+</html>
